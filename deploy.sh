@@ -26,6 +26,7 @@ git push -f git@github.com:renquanxi/ibook.git master:gh-pages
 
 cd -
 
+# 提交完代码以后切换回主分支删掉部署分支
 git checkout master
 
 git branch -D deploy
