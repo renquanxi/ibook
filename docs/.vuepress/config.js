@@ -31,7 +31,7 @@ module.exports = {
     /* vuepress-theme-yilia-plus 配置 */
     yilia_plus: {
       // github-corner(关闭请设置为false)
-      'github-corner': false,
+      // 'github-corner': false,
       github: {
         url: "https://github.com/renquanxi"
       },
