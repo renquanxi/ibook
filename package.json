@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vuepress dev docs",
+    "start": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
