@@ -82,6 +82,7 @@ module.exports = {
         'elementUI中遇到的问题',
         'js，cs常见问题',
         '报错处理合集',
+        'github公钥配置',
       ],
       '/createblog/': [
         '',
