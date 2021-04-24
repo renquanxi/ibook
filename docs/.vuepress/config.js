@@ -8,11 +8,11 @@ module.exports = {
           enable: true,
           // 模型名称(default: hibiki)>>>取值请参考：
           // https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
-          model: 'hibiki',
+          model: 'z16',
           display: {
             position: "right", // 显示位置：left/right(default: 'right')
-            width: 135, // 模型的长度(default: 135)
-            height: 300, // 模型的高度(default: 300)
+            width: 185, // 模型的长度(default: 135)
+            height: 350, // 模型的高度(default: 300)
             hOffset: 65, //  水平偏移(default: 65)
             vOffset: 0, //  垂直偏移(default: 0)
           },
@@ -78,15 +78,18 @@ module.exports = {
       '/studyNote/git学习': ['/studyNote/git学习'],
       '/studyNote/常用数组方法整理': ['/studyNote/常用数组方法整理'],
       '/question/': [
-        '/question/',
+        '',
         'elementUI中遇到的问题',
         'js，cs常见问题',
         '报错处理合集',
       ],
       '/createblog/': [
-        '/createblog/',
-        'markDown语法'
-      ]
+        '',
+        'markDown语法',
+        'vuepress踩坑',
+        '域名解析问题',
+      ],
+      
     },
     // 这个是会把侧边栏所有的标题都展示    
     // displayAllHeaders: true,
