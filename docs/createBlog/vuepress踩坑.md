@@ -42,7 +42,7 @@ npm install -D watchpack
 
 ## 基础路径问题
 
-我在本地处理号了以后提交到线上的时候发现在线上展示的有问题，如图
+我在本地处理好了以后提交到线上的时候发现在线上展示的有问题，如图
 
 ![](https://qinghuansmile.top/iamgeWarehouse/createdBlog/9.png)
 
