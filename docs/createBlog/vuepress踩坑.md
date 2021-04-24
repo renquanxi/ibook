@@ -36,4 +36,10 @@ npm install -D watchpack
 
 我个人比较倾向与方法二
 
+## 首页图片显示不出来
+
+因为我们图片默认的入口位置是在public中的，所以我们首页中的配置`heroImage: /image/logo_smile.png`这个图片就是需要在public文件夹下image文件夹下存放的
+
+## 基础路径问题
+
 
