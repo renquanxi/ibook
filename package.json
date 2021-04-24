@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "vuepress dev docs --temp .temp",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
