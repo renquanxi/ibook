@@ -42,4 +42,17 @@ npm install -D watchpack
 
 ## 基础路径问题
 
+我在本地处理号了以后提交到线上的时候发现在线上展示的有问题，如图
+
+![](https://qinghuansmile.top/iamgeWarehouse/createdBlog/9.png)
+
+明显是数据加载的问题，html都渲染出来了，但是样式和交互都失效了，查看了官方文档以后发现是自己base路径配置的问题，
+
+config中的base指的是部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 GitHub pages，如果你想将你的网站部署到 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/"，它的值应当总是以斜杠开始，并以斜杠结束。
+
+base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链接中，所以你只需要指定一次。
+
+比如我使用的 GitHub pages的根路径路径是https://renquanxi.github.io，但是我把文件部署到了https://renquanxi.github.io/ibook/上了，而我的根路径还是默认的/那么加载静态资源的时候他还是会去https://renquanxi.github.io/地址去中加载，所以我们需要把根路径配置成/ibook/这样就可以了
+
+
 
