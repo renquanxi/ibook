@@ -64,6 +64,7 @@ module.exports = {
         ]
       },
       { text: '解决问题', link: '/question/' },
+      { text: '搭建博客', link: '/createblog/' },
       { text: '查看源码', link: 'https://github.com/renquanxi/ibook' },
     ],
     sidebar: {
@@ -82,6 +83,10 @@ module.exports = {
         'js，cs常见问题',
         '报错处理合集',
       ],
+      '/createblog/': [
+        '/createblog/',
+        'markDown语法'
+      ]
     },
     // 这个是会把侧边栏所有的标题都展示    
     // displayAllHeaders: true,
