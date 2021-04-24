@@ -48,9 +48,36 @@ module.exports = {
       }
     },
     nav: [
+      
       { text: '首页', link: '/' },
-      { text: '学习笔记', link: '/guide/' },
-      { text: '解决问题', link: 'https://google.com' },
-    ]
+      { text: '学习笔记', 
+        items: [
+          {text: 'JS语法基础', link: '/studyNote/JS语法基础'},
+          {text: 'JS进阶语法', link: '/studyNote/JS进阶语法'},
+          {text: 'webAPI', link: '/studyNote/webAPI'},
+          {text: 'jQuery常用语法', link: '/studyNote/jQuery常用语法'},
+          {text: 'ES6', link: '/studyNote/ES6'},
+          {text: 'Ajax 笔记整理', link: '/studyNote/Ajax 笔记整理'},
+          {text: 'nodejs', link: '/studyNote/nodejs'},
+        ]
+      },
+      { text: '解决问题', link: '/guide/' },
+      { text: '查看源码', link: 'https://github.com/renquanxi/ibook' },
+    ],
+    sidebar: {
+      '/guide/': [ '1','2','3' ],
+      '/studyNote/JS语法基础': ['/studyNote/JS语法基础'],
+      '/studyNote/JS进阶语法': ['/studyNote/JS进阶语法'],
+      '/studyNote/webAPI': ['/studyNote/webAPI'],
+      '/studyNote/jQuery常用语法': ['/studyNote/jQuery常用语法'],
+      '/studyNote/ES6': ['/studyNote/ES6'],
+      '/studyNote/Ajax 笔记整理': ['/studyNote/Ajax 笔记整理'],
+      '/studyNote/nodejs': ['/studyNote/nodejs'],
+    },
+    // 这个是会把侧边栏所有的标题都展示    
+    // displayAllHeaders: true,
+
+    // 侧边栏展示的层级数，默认值为1打开到二级标题，设置为2会打开到三级标题
+    sidebarDepth: 2
   },
 }
