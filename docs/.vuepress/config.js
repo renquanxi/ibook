@@ -77,8 +77,10 @@ module.exports = {
       '/studyNote/git学习': ['/studyNote/git学习'],
       '/studyNote/常用数组方法整理': ['/studyNote/常用数组方法整理'],
       '/question/': [
+        '/question/',
         'elementUI中遇到的问题',
         'js，cs常见问题',
+        '报错处理合集',
       ],
     },
     // 这个是会把侧边栏所有的标题都展示    

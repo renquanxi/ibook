@@ -255,7 +255,7 @@ export default {
 
 ## 四、el-tooltip换行显示
 
-![image-20210422144822142](/Users/rqx/Library/Application Support/typora-user-images/image-20210422144822142.png)
+![image-20210422144822142](https://qinghuansmile.top/iamgeWarehouse/img/tooltip.png)
 
 ```HTML
 <el-table-column

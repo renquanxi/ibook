@@ -104,21 +104,7 @@ debounce() {
 },
 ```
 
-## JSON.parse报错问题
-
-（Uncaught SyntaxError: Unexpected token u in JSON at position 0）
-
-乍一看这个错误感觉无从下手，其实很简单，这个错误是**由于JSON.parse解析了undefined**。
-
-![img](https://img-blog.csdnimg.cn/20190314124244335.png)
-
-某个地方用了JSON.parse，但是传入的参数不是一个合格的json字符串。
-
-==解决==：转化前加个判断 a && JSON.parse(a) 或者 if(a) JSON.parse(a)
-
-
-
 ## 忽略某一行的Eslint报错
 
-在需要忽略的那一行上面加一个==<!-- eslint-disable-next-line -->==
+在需要忽略的那一行上面加一个`<!-- eslint-disable-next-line -->`
 
