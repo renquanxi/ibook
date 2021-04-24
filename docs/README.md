@@ -18,7 +18,11 @@ heroText: Welcome to my world
   html,body,#app,#app>main {
    height:100%;
   }
-  .no-sidebar {
+  .no-sidebar, .theme-container {
     height: 90%
   }
+  .navbar .logo {
+    margin-left: 1rem!important;
+  }
+
 </style>

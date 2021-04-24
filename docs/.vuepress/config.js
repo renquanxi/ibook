@@ -28,6 +28,7 @@ module.exports = {
   ],
   theme: 'vuepress-theme-yilia-plus',
   themeConfig: {
+    logo: '/image/logo_smile.png',
     /* vuepress-theme-yilia-plus 配置 */
     yilia_plus: {
       // github-corner(关闭请设置为false)
@@ -48,7 +49,6 @@ module.exports = {
       }
     },
     nav: [
-      
       { text: '首页', link: '/' },
       { text: '学习笔记', 
         items: [
@@ -59,13 +59,14 @@ module.exports = {
           {text: 'ES6', link: '/studyNote/ES6'},
           {text: 'Ajax 笔记整理', link: '/studyNote/Ajax 笔记整理'},
           {text: 'nodejs', link: '/studyNote/nodejs'},
+          {text: 'git学习', link: '/studyNote/git学习'},
+          {text: '常用数组方法整理', link: '/studyNote/常用数组方法整理'},
         ]
       },
-      { text: '解决问题', link: '/guide/' },
+      { text: '解决问题', link: '/question/' },
       { text: '查看源码', link: 'https://github.com/renquanxi/ibook' },
     ],
     sidebar: {
-      '/guide/': [ '1','2','3' ],
       '/studyNote/JS语法基础': ['/studyNote/JS语法基础'],
       '/studyNote/JS进阶语法': ['/studyNote/JS进阶语法'],
       '/studyNote/webAPI': ['/studyNote/webAPI'],
@@ -73,6 +74,12 @@ module.exports = {
       '/studyNote/ES6': ['/studyNote/ES6'],
       '/studyNote/Ajax 笔记整理': ['/studyNote/Ajax 笔记整理'],
       '/studyNote/nodejs': ['/studyNote/nodejs'],
+      '/studyNote/git学习': ['/studyNote/git学习'],
+      '/studyNote/常用数组方法整理': ['/studyNote/常用数组方法整理'],
+      '/question/': [
+        'elementUI中遇到的问题',
+        'js，cs常见问题',
+      ],
     },
     // 这个是会把侧边栏所有的标题都展示    
     // displayAllHeaders: true,
