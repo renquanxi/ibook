@@ -1,5 +1,5 @@
 module.exports = {
-  // "base": "/ibook/",
+  "base": "/ibook/",
   plugins: [
     [
       'vuepress-plugin-helper-live2d', {
