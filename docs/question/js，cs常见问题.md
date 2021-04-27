@@ -108,3 +108,27 @@ debounce() {
 
 在需要忽略的那一行上面加一个`<!-- eslint-disable-next-line -->`
 
+
+
+## 打开控制台一直弹出断点
+
+```js
+function loop() {
+				var startTime = new Date();
+				debugger;
+				if (new Date() - startTime > timeLimit) {
+					if (!open) {
+						callbacks.forEach(function(fn) {
+							fn.call(null);
+						});
+					}
+					open = true;
+					window.stop();  // 停止页面载入
+					alert('扒的话，劳烦您尊重一下劳动成果！');
+					document.body.innerHTML = "";
+				} else {
+					open = false;
+				}
+			}
+```
+
