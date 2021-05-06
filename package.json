@@ -7,13 +7,13 @@
     "start": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh"
-
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
   },
   "dependencies": {
     "vuepress-plugin-helper-live2d": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-theme-yilia-plus": "^1.0.0"
   }
 }
