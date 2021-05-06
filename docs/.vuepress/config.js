@@ -42,8 +42,13 @@ module.exports = {
     { text: '文档', items: [
       {text: 'fabric中文文档', link: '/fabric/'},
     ]},
-    { text: '解决问题', link: '/question/' },
-    { text: '搭建博客', link: '/createblog/' },
+    { text: '解决问题', link: '/question/',
+      items: [
+        { text: '常见问题', link: '/question/' },
+        { text: 'vuepress相关', link: '/createblog/' }
+      ]
+    },
+    // { text: '搭建博客', link: '/createblog/' },
     { text: '收藏',link: "/collect/01.网站/",
     items: [
       {
