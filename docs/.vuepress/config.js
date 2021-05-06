@@ -44,6 +44,18 @@ module.exports = {
     ]},
     { text: '解决问题', link: '/question/' },
     { text: '搭建博客', link: '/createblog/' },
+    { text: '收藏',link: "/collect/01.网站/",
+    items: [
+      {
+        text: "网站",
+        link: "/collect/01.网站/"
+      },
+      {
+        text: "资源",
+        link: "/collect/02.资源/"
+      },
+    ]},
+    
     { text: '查看源码', link: 'https://github.com/renquanxi/ibook' },
   ],
   sidebar: {
@@ -80,6 +92,10 @@ module.exports = {
       'part-6',
       'part-7',
       'part-8',
+    ],
+    '/collect/': [
+      ['01.网站', '网站'],
+      ['02.资源', '资源'],
     ]
   },
   // 这个是会把侧边栏所有的标题都展示    
