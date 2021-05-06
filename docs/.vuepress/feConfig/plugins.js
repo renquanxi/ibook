@@ -73,4 +73,8 @@ module.exports = [
     },
   ],
 
+  // 参考官方插件 https://vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html
+  ['@vuepress/back-to-top'], // 回到顶部
+  ['@vuepress/last-updated'], // 最后更新时间，如果是用的官方默认主题的话，无需安装直接饮用即可，如果是别的主题的话需要自己安装一下
+  ['@vuepress/medium-zoom'], // 放大图片
 ]
