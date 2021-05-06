@@ -15,12 +15,12 @@ heroText: Welcome to my world
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 <style>
-  html,body,#app,#app>main {
+  /* html,body,#app,#app>main {
    height:100%;
-  }
-  .no-sidebar, .theme-container {
+  } */
+  /* .no-sidebar, .theme-container {
     height: 90%
-  }
+  } */
   .navbar .logo {
     margin-left: 1rem!important;
   }
