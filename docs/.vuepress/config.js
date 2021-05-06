@@ -35,6 +35,7 @@ module.exports = {
         {text: 'ES6', link: '/studyNote/ES6'},
         {text: 'Ajax 笔记整理', link: '/studyNote/Ajax 笔记整理'},
         {text: 'nodejs', link: '/studyNote/nodejs'},
+        {text: 'Vue', link: '/studyNote/Vue/'},
         {text: 'git学习', link: '/studyNote/git学习'},
         {text: '常用数组方法整理', link: '/studyNote/常用数组方法整理'},
       ]
@@ -42,7 +43,7 @@ module.exports = {
     { text: '文档', items: [
       {text: 'fabric中文文档', link: '/fabric/'},
     ]},
-    { text: '解决问题', link: '/question/',
+    { text: '问题', link: '/question/',
       items: [
         { text: '常见问题', link: '/question/' },
         { text: 'vuepress相关', link: '/createblog/' }
@@ -71,6 +72,7 @@ module.exports = {
     '/studyNote/ES6': ['/studyNote/ES6'],
     '/studyNote/Ajax 笔记整理': ['/studyNote/Ajax 笔记整理'],
     '/studyNote/nodejs': ['/studyNote/nodejs'],
+    '/studyNote/Vue/': ['','01.Vue CLi3 修改webpack配置', '02.Vue中的scoped和scoped穿透', '03.Vue项目使用mock数据的几种方式'],
     '/studyNote/git学习': ['/studyNote/git学习'],
     '/studyNote/常用数组方法整理': ['/studyNote/常用数组方法整理'],
     '/question/': [
