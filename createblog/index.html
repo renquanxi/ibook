@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建极简个人静态博客网站</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/ibook/assets/css/0.styles.97c30387.css" as="style"><link rel="preload" href="/ibook/assets/js/app.f3dfeeca.js" as="script"><link rel="preload" href="/ibook/assets/js/2.a89a11ce.js" as="script"><link rel="preload" href="/ibook/assets/js/12.c1c3dc10.js" as="script"><link rel="prefetch" href="/ibook/assets/js/10.af12a82d.js"><link rel="prefetch" href="/ibook/assets/js/11.6cc43d9b.js"><link rel="prefetch" href="/ibook/assets/js/13.dca409ac.js"><link rel="prefetch" href="/ibook/assets/js/14.4d879880.js"><link rel="prefetch" href="/ibook/assets/js/15.85aa52f1.js"><link rel="prefetch" href="/ibook/assets/js/16.0c26d41c.js"><link rel="prefetch" href="/ibook/assets/js/17.36356e53.js"><link rel="prefetch" href="/ibook/assets/js/18.24a4eb8e.js"><link rel="prefetch" href="/ibook/assets/js/19.d1dc4ccb.js"><link rel="prefetch" href="/ibook/assets/js/20.10200094.js"><link rel="prefetch" href="/ibook/assets/js/21.3bb51aa7.js"><link rel="prefetch" href="/ibook/assets/js/22.c7c5a85d.js"><link rel="prefetch" href="/ibook/assets/js/23.72040ccb.js"><link rel="prefetch" href="/ibook/assets/js/24.c4b914ae.js"><link rel="prefetch" href="/ibook/assets/js/25.161a7752.js"><link rel="prefetch" href="/ibook/assets/js/26.fa65ff0a.js"><link rel="prefetch" href="/ibook/assets/js/27.37286a9b.js"><link rel="prefetch" href="/ibook/assets/js/28.7843ccc5.js"><link rel="prefetch" href="/ibook/assets/js/29.f1d9dec2.js"><link rel="prefetch" href="/ibook/assets/js/3.fb47020c.js"><link rel="prefetch" href="/ibook/assets/js/30.7cef5e20.js"><link rel="prefetch" href="/ibook/assets/js/31.876b1486.js"><link rel="prefetch" href="/ibook/assets/js/32.250a8170.js"><link rel="prefetch" href="/ibook/assets/js/33.04cc6c24.js"><link rel="prefetch" href="/ibook/assets/js/34.a11a10f8.js"><link rel="prefetch" href="/ibook/assets/js/35.40fa11c8.js"><link rel="prefetch" href="/ibook/assets/js/36.bfeb614f.js"><link rel="prefetch" href="/ibook/assets/js/37.cdd7760e.js"><link rel="prefetch" href="/ibook/assets/js/38.c7aee897.js"><link rel="prefetch" href="/ibook/assets/js/39.3b49dfa4.js"><link rel="prefetch" href="/ibook/assets/js/4.eb34ec45.js"><link rel="prefetch" href="/ibook/assets/js/40.62e8e526.js"><link rel="prefetch" href="/ibook/assets/js/41.50410ec0.js"><link rel="prefetch" href="/ibook/assets/js/42.1b86548f.js"><link rel="prefetch" href="/ibook/assets/js/43.2ae6caa2.js"><link rel="prefetch" href="/ibook/assets/js/44.75f7a0a7.js"><link rel="prefetch" href="/ibook/assets/js/5.fc1e6d38.js"><link rel="prefetch" href="/ibook/assets/js/6.1f874886.js"><link rel="prefetch" href="/ibook/assets/js/7.f700d755.js"><link rel="prefetch" href="/ibook/assets/js/8.ecde6251.js"><link rel="prefetch" href="/ibook/assets/js/9.864b0981.js">
+    <link rel="stylesheet" href="/ibook/assets/css/0.styles.97c30387.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><main><main slot="sidebar-top"><a href="https://github.com/renquanxi" aria-label="View source on GitHub" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path> <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" class="octo-arm" style="transform-origin: 130px 106px;"></path> <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a></main> <div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ibook/" class="home-link router-link-active"><img src="/ibook/image/logo_smile.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ibook/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/studyNote/JS语法基础.html" class="nav-link">
+  JS语法基础
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/JS进阶语法.html" class="nav-link">
+  JS进阶语法
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/webAPI.html" class="nav-link">
+  webAPI
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/jQuery常用语法.html" class="nav-link">
+  jQuery常用语法
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/Ajax 笔记整理.html" class="nav-link">
+  Ajax 笔记整理
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/nodejs.html" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/git学习.html" class="nav-link">
+  git学习
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/常用数组方法整理.html" class="nav-link">
+  常用数组方法整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档" class="dropdown-title"><span class="title">文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档" class="mobile-dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/fabric/" class="nav-link">
+  fabric中文文档
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><span class="title">问题</span> <span class="arrow down"></span></button> <button type="button" aria-label="问题" class="mobile-dropdown-title"><span class="title">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/question/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/createblog/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuepress相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><span class="title">收藏</span> <span class="arrow down"></span></button> <button type="button" aria-label="收藏" class="mobile-dropdown-title"><span class="title">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/collect/01.网站/" class="nav-link">
+  网站
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/collect/02.资源/" class="nav-link">
+  资源
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/renquanxi/ibook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  查看源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ibook/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/studyNote/JS语法基础.html" class="nav-link">
+  JS语法基础
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/JS进阶语法.html" class="nav-link">
+  JS进阶语法
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/webAPI.html" class="nav-link">
+  webAPI
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/jQuery常用语法.html" class="nav-link">
+  jQuery常用语法
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/Ajax 笔记整理.html" class="nav-link">
+  Ajax 笔记整理
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/nodejs.html" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/git学习.html" class="nav-link">
+  git学习
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/studyNote/常用数组方法整理.html" class="nav-link">
+  常用数组方法整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档" class="dropdown-title"><span class="title">文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="文档" class="mobile-dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/fabric/" class="nav-link">
+  fabric中文文档
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><span class="title">问题</span> <span class="arrow down"></span></button> <button type="button" aria-label="问题" class="mobile-dropdown-title"><span class="title">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/question/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/createblog/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuepress相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><span class="title">收藏</span> <span class="arrow down"></span></button> <button type="button" aria-label="收藏" class="mobile-dropdown-title"><span class="title">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ibook/collect/01.网站/" class="nav-link">
+  网站
+</a></li><li class="dropdown-item"><!----> <a href="/ibook/collect/02.资源/" class="nav-link">
+  资源
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/renquanxi/ibook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  查看源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/ibook/createblog/" aria-current="page" class="active sidebar-link">搭建极简个人静态博客网站</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ibook/createblog/#一、什么是-vuepress" class="sidebar-link">一、什么是 VuePress</a></li><li class="sidebar-sub-header"><a href="/ibook/createblog/#二、为什么要使用-vuepress" class="sidebar-link">二、为什么要使用 VuePress</a></li><li class="sidebar-sub-header"><a href="/ibook/createblog/#三、开始搭建" class="sidebar-link">三、开始搭建</a></li><li class="sidebar-sub-header"><a href="/ibook/createblog/#四、一些小tips" class="sidebar-link">四、一些小tips</a></li><li class="sidebar-sub-header"><a href="/ibook/createblog/#五、部署上线" class="sidebar-link">五、部署上线</a></li></ul></li><li><a href="/ibook/createblog/markDown语法.html" class="sidebar-link">markDown常用语法</a></li><li><a href="/ibook/createblog/vuepress踩坑.html" class="sidebar-link">vuepress踩坑</a></li><li><a href="/ibook/createblog/域名解析问题.html" class="sidebar-link">域名解析问题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搭建极简个人静态博客网站"><a href="#搭建极简个人静态博客网站" class="header-anchor">#</a> 搭建极简个人静态博客网站</h1> <div class="custom-block tip"><p class="custom-block-title">友情提示</p> <p>如果对代码不够熟悉，可以 <a href="https://github.com/zhangyunchencc/vuepress-devkit.git">下载</a> 我写好的脚手架然后从第五节开始看。</p></div> <h2 id="一、什么是-vuepress"><a href="#一、什么是-vuepress" class="header-anchor">#</a> 一、什么是 VuePress</h2> <p>使用技术栈：VuePress</p> <p><strong>VuePress</strong> 是尤雨溪（vue.js 框架作者）4月12日发布的一个全新的基于 vue 的静态网站生成器，实际上就是一个 vue 的 spa 应用，内置 webpack，可以用来写文档。详见 <a href="https://vuepress.docschina.org/" target="_blank" rel="noopener noreferrer">VuePress中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="二、为什么要使用-vuepress"><a href="#二、为什么要使用-vuepress" class="header-anchor">#</a> 二、为什么要使用 VuePress</h2> <p>其实类似的建站工具有很多，比如 WordPress、Jekyll、Hexo 等，其中 WordPress 需要自己购买虚拟主机，不考虑；Jekyll 是 Github-Page 默认支持的，听说操作比较复杂，没有用过不做过多评价了；Hexo 之前一直在用，但一直觉得主题不好看，风格不够简洁优雅。自从遇见 VuePress，嗯，就是它了~</p> <p>VuePress 有很多优点：</p> <ul><li>界面简洁优雅（个人感觉比 HEXO 好看）</li> <li>容易上手（半小时能搭好整个项目）</li> <li>更好的兼容、扩展 Markdown 语法</li> <li>响应式布局，PC端、手机端</li> <li>Google Analytics 集成</li> <li>支持 PWA</li></ul> <h2 id="三、开始搭建"><a href="#三、开始搭建" class="header-anchor">#</a> 三、开始搭建</h2> <h4 id="创建项目文件夹"><a href="#创建项目文件夹" class="header-anchor">#</a> 创建项目文件夹</h4> <p>可以右键手动新建，也可以使用 mkdir 命令新建：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token function">mkdir</span> myblog
+</code></pre></div><h4 id="全局安装-vuepress"><a href="#全局安装-vuepress" class="header-anchor">#</a> 全局安装 VuePress</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token function">npm</span> <span class="token function">install</span> -g vuepress
+</code></pre></div><h4 id="进入-myblog-文件夹-初始化项目"><a href="#进入-myblog-文件夹-初始化项目" class="header-anchor">#</a> 进入 myblog 文件夹，初始化项目</h4> <p>使用 <code>npm init</code> 或 <code>npm init -y</code>（默认yes）</p> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token function">npm</span> init -y
+</code></pre></div><h4 id="创建文件夹和文件"><a href="#创建文件夹和文件" class="header-anchor">#</a> 创建文件夹和文件</h4> <p>在 myblog 文件夹中创建 docs 文件夹，在 docs 中创建 .vuepress 文件夹 和 README.md文件，在.vuepress中创建 public 文件夹和 config.js，最终项目结构如下所示：</p> <p>如果以点开头的文件夹创建不了或者不会创建可以用命令创建<code>mkdir .vuepress</code></p> <div class="language- extra-class"><pre><code>myblog
+├─── docs
+│   ├── README.md
+│   └── .vuepress
+│       ├── public
+│       └── config.js
+└── package.json
+</code></pre></div><h4 id="在-config-js-文件中配置网站标题、描述、主题等信息"><a href="#在-config-js-文件中配置网站标题、描述、主题等信息" class="header-anchor">#</a> 在 config.js 文件中配置网站标题、描述、主题等信息</h4> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'my blog'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'我的个人网站'</span><span class="token punctuation">,</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">// 注入到当前页面的 HTML &lt;head&gt; 中的标签</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/logo.jpg'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  base<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 这是部署到github相关的配置</span>
+  markdown<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lineNumbers<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 代码块显示行号</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span><span class="token punctuation">[</span> <span class="token comment">// 导航栏配置</span>
+      <span class="token punctuation">{</span>text<span class="token operator">:</span> <span class="token string">'理想'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/accumulate/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>text<span class="token operator">:</span> <span class="token string">'姑娘'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/algorithm/'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>text<span class="token operator">:</span> <span class="token string">'远方'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://baidu.com'</span><span class="token punctuation">}</span>      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sidebar<span class="token operator">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏配置</span>
+    sidebarDepth<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏显示2级</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="在-package-json-文件里添加两个启动命令"><a href="#在-package-json-文件里添加两个启动命令" class="header-anchor">#</a> 在 package.json 文件里添加两个启动命令</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="在readme-md文件中加如下面内容-这些是官方默认首页"><a href="#在readme-md文件中加如下面内容-这些是官方默认首页" class="header-anchor">#</a> 在README.md文件中加如下面内容（这些是官方默认首页）</h4> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml">home: true
+heroImage: /hero.png
+heroText: Hero 标题
+tagline: Hero 副标题
+actionText: 快速上手 →
+actionLink: /zh/guide/
+features:
+- title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+- title: 高性能
+  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+footer: MIT Licensed | Copyright © 2018-present Evan You</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h4 id="到此基础搭建就完成了-执行以下跑起来看看吧"><a href="#到此基础搭建就完成了-执行以下跑起来看看吧" class="header-anchor">#</a> 到此基础搭建就完成了 🎉 执行以下跑起来看看吧</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token function">npm</span> run dev
+</code></pre></div><h2 id="四、一些小tips"><a href="#四、一些小tips" class="header-anchor">#</a> 四、一些小tips</h2> <p>完成了基础搭建后，就可以在docs目录下新建 <code>.md</code> 文件写文章了（.md 是 Markdown 语法文件，你需要知道 Markdown 的一些基本写法，很简单，这里给大家一份 <a href="https://www.jianshu.com/p/b03a8d7b1719" target="_blank" rel="noopener noreferrer">Markdown 语法整理大集合<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）</p> <p>如果真心是不会用markdown语法的给大家推荐一个软件吧，可以用typora来写，这是一个轻量级的markdown文件编辑器，颜值也很nice</p> <h4 id="代码块高亮"><a href="#代码块高亮" class="header-anchor">#</a> 代码块高亮</h4> <p>在 .md 文件中书写代码时，可在 ``` 后增加 js、html、json等格式类型，代码块即可按照指定类型高亮</p> <p>代码：</p> <pre class="language-text"><code>``` js
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```</code></pre> <p>效果：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      msg<span class="token operator">:</span> <span class="token string">'Highlighted!'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="自定义容器"><a href="#自定义容器" class="header-anchor">#</a> 自定义容器</h4> <p>代码：</p> <div class="language- extra-class"><pre><code>::: tip 提示
+this is a tip
+:::
+
+::: warning 注意
+this is a tip
+:::
+
+::: danger 警告
+this is a tip
+:::
+</code></pre></div><p>效果：</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>this is a tip</p></div> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>this is a tip</p></div> <div class="custom-block danger"><p class="custom-block-title">警告</p> <p>this is a tip</p></div> <h4 id="支持-emoji"><a href="#支持-emoji" class="header-anchor">#</a> 支持 Emoji</h4> <p>代码：</p> <div class="language- extra-class"><pre><code>:tada: :100: :bamboo: :gift_heart: :fire:
+</code></pre></div><p>效果：
+🎉 💯 🎍 💝 🔥</p> <p>👉 这里有一份 <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener noreferrer">Emoji 大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="五、部署上线"><a href="#五、部署上线" class="header-anchor">#</a> 五、部署上线</h2> <p>说了这么多都是在本地进行的，现在我们要把本地的内容推送到某个服务器上，这样只要有网络，就可以随时随地看自己的网站了。</p> <p>一般来说，有两种方案可供选择：</p> <ol><li>自己买一个服务器，阿里云、腾讯云等，这种方式的好处是速度有保证、可以被搜索引擎收录，坏处是要花钱啊 💰 土豪同学可以考虑。</li> <li>使用 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 。什么是 Github Pages 呢？简单说就是 Github 提供的、用于搭建个人网站的静态站点托管服务。很多人用它搭建个人博客。这种方式的好处是免费、方便，坏处是速度可能会有些慢、不能被国内的搜索引擎收录。</li></ol> <p>这里给大家讲解一下第二种方案</p> <h4 id="新建仓库-username-github-io-不用克隆到本地"><a href="#新建仓库-username-github-io-不用克隆到本地" class="header-anchor">#</a> 新建仓库： USERNAME.github.io （不用克隆到本地）</h4> <p><b>！！！注意：USERNAME 必须是你 Github 的账号名称，不是你的名字拼音，要保证和Github账号名一模一样！</b></p> <p>例如我的 Github 账号名称是 renquanxi</p> <p>那么新建仓库，Repository name 就填写为：renquanxi.github.io</p> <ul><li><p>使用工具包的，将 <a href="https://github.com/zhangyunchencc/vuepress-devkit.git" target="_blank" rel="noopener noreferrer">vuepress-devkit<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 中的内容拷贝到 vuepressBlog 文件夹中</p></li> <li><p>自己从头搭建的，将 myBlog 文件夹的内容拷贝到vuepressBlog，并在根目录下创建 deploy.sh 文件，并且把下面的内容拷贝进去</p></li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果你想要部署到 https://USERNAME.github.io</span>
+<span class="token function">git</span> push -f git@github.com:USERNAME/USERNAME.github.io.git master
+
+<span class="token comment"># 回到上次工作的文件夹</span>
+<span class="token builtin class-name">cd</span> -
+</code></pre></div><h4 id="修改-deploy-sh-发布脚本"><a href="#修改-deploy-sh-发布脚本" class="header-anchor">#</a> 修改 deploy.sh 发布脚本</h4> <p>把文件中的 USERNAME 改成 Github 账号名，例如我的账号名是 renquanxi，那么就可以改为：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 如果你想要部署到 https://USERNAME.github.io</span>
+<span class="token function">git</span> push -f git@github.com:renquanxi/renquanxi.github.io.git master
+</code></pre></div><h4 id="在-package-json-文件夹中添加发布命令-使用工具包的请忽略"><a href="#在-package-json-文件夹中添加发布命令-使用工具包的请忽略" class="header-anchor">#</a> 在 package.json 文件夹中添加发布命令（使用工具包的请忽略）</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="大功告成-运行发布命令"><a href="#大功告成-运行发布命令" class="header-anchor">#</a> 👏 大功告成，运行发布命令</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token function">npm</span> run deploy
+</code></pre></div><p>此时打开 Github Settings 中下面的链接: <a href="https://renquanxi.github.io/" target="_blank" rel="noopener noreferrer">https://renquanxi.github.io/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 即可看到自己的主页啦~</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/ibook/createblog/markDown语法.html">
+        markDown常用语法
+      </a>
+      →
+    </span></p></div> </main></div> <div class="footer" data-v-34d4abe6><div id="footer-info" data-v-34d4abe6><div class="footer-left" data-v-34d4abe6>
+      © 2016-2021
+      <span data-v-34d4abe6><a href="https://github.com/renquanxi/" target="_blank">清欢先生</a></span></div> <div class="footer-right" data-v-34d4abe6>Theme:<a href="https://github.com/JoeyBling/vuepress-theme-yilia-plus" target="_blank">vuepress-theme-yilia-plus</a> by Litten</div></div> <div class="busuanzi" data-v-34d4abe6><span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量
+    <span id="busuanzi_value_site_pv"></span>次
+    <span class="post-meta-divider">|</span></span> <span id="busuanzi_container_site_uv" style="display:none">
+    本站访客数
+    <span id="busuanzi_value_site_uv"></span>人
+  </span></div></div></main><div class="global-ui"><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:185px;height:350px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="185" height="350" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:185px;height:350px;"></canvas></div><!----></div></div>
+    <script src="/ibook/assets/js/app.f3dfeeca.js" defer></script><script src="/ibook/assets/js/2.a89a11ce.js" defer></script><script src="/ibook/assets/js/12.c1c3dc10.js" defer></script>
+  </body>
+</html>
