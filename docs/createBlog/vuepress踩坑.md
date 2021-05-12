@@ -54,5 +54,7 @@ base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链
 
 比如我使用的 GitHub pages的根路径路径是https://renquanxi.github.io，但是我把文件部署到了https://renquanxi.github.io/ibook/上了，而我的根路径还是默认的/那么加载静态资源的时候他还是会去https://renquanxi.github.io/地址去中加载，所以我们需要把根路径配置成/ibook/这样就可以了
 
+## 报错提示
+构建部署的时候会提示`Enter passphrase for key '/Users/rqx/.ssh/id_rsa':`这是让你输入你生成密钥时候写的密码
 
 
