@@ -2,6 +2,8 @@ const plugins =  require("./feConfig/plugins");
 // const themeConfig =  require("./feConfig/themeConfig");
 module.exports = {
   "base": "/ibook/",
+  title: '个人收藏夹',
+  description: '个人收藏夹',
   theme: 'vuepress-theme-yilia-plus',
   themeConfig: {
   logo: '/image/logo_smile.png',
@@ -46,10 +48,10 @@ module.exports = {
     { text: '问题', link: '/question/',
       items: [
         { text: '常见问题', link: '/question/' },
-        { text: 'vuepress相关', link: '/createblog/' }
+        // { text: 'vuepress相关', link: '/createblog/' }
       ]
     },
-    // { text: '搭建博客', link: '/createblog/' },
+    { text: 'vuepress', link: '/createBlog/'},
     { text: '收藏',link: "/collect/01.网站/",
     items: [
       {
@@ -82,7 +84,7 @@ module.exports = {
       '报错处理合集',
       'github公钥配置',
     ],
-    '/createblog/': [
+    '/createBlog/': [
       '',
       'markDown语法',
       'vuepress踩坑',

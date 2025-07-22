@@ -2,9 +2,9 @@
 home: true
 heroImage: /image/logo_smile.png
 heroText: Welcome to my world
-# tagline: let me see
-# actionText: 走你 →
-# actionLink: /zh/guide/
+tagline: let me see
+actionText: 走你 →
+actionLink: /zh/guide/
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
